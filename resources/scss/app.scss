@@ -8,5 +8,6 @@ body {
     background-size: cover;
     font-family: "Roboto", sans-serif;
 }
-
-@import './header.scss'
+@import './general.scss';
+@import './header.scss';
+@import './footer.scss';

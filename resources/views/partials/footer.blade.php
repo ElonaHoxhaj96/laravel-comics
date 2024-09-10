@@ -1,123 +1,3 @@
-    
-export default{
-    name:'LinkFooter',
-    data() {
-        return{
-            dcComics: [
-                {
-                    text: 'Character',
-                    url: '#'
-                },
-                {
-                    text: 'Comics',
-                    url: '#'
-                },
-                {
-                    text: 'Movies',
-                    url: '#'
-                },
-                {
-                    text: 'TV',
-                    url: '#'
-                },
-                {
-                    text: 'Games',
-                    url: '#'
-                },
-                {
-                    text: 'Videos',
-                    url: '#'
-                },
-                {
-                    text: 'News',
-                    url: '#'
-                }
-             
-            ],
-            shop:[
-                {
-                    text: 'Shop DC',
-                    url: '#'
-                },
-                {
-                    text: 'Shop DC Collectibles',
-                    url: '#'
-                }
-            ],
-            DC:[
-                {
-                    text: 'Terms of us',
-                    url: '#'
-                },
-                {
-                    text: 'Privacy policy(New)',
-                    url: '#'
-                },
-                {
-                    text: 'Ad Choices',
-                    url: '#'
-                },
-                {
-                    text: 'Advertising',
-                    url: '#'
-                },
-                {
-                    text: 'Jobs',
-                    url: '#'
-                },
-                {
-                    text: 'Subscriptions',
-                    url: '#'
-                },
-                {
-                    text: 'Talent Workshops',
-                    url: '#'
-                }
-                ,
-                {
-                    text: 'CPSC Certificates)',
-                    url: '#'
-                },
-                {
-                    text: 'Ratings',
-                    url: '#'
-                },
-                {
-                    text: 'Shop Help',
-                    url: '#'
-                },
-                {
-                    text: 'Contact Us',
-                    url: '#'
-                }             
-            ],
-            sites:[
-                {
-                    text: 'DC',
-                    url: '#'
-                },
-                {
-                    text: 'MAD Magazine',
-                    url: '#'
-                },
-                {
-                    text: 'DC Kids',
-                    url: '#'
-                },
-                {
-                    text: 'DC Universe',
-                    url: '#'
-                },
-                {
-                    text: 'DC Power Visa',
-                    url: '#'
-                }
-            ],
-
-        }
-    }
-}
-
 
 <footer class="my-5 text-center">
     <section id="contenitor_link">
@@ -127,14 +7,21 @@ export default{
         <div class="left">
             <div class="link_cards">
                 <h3>DC COMICS</h3>
-                <div v-for="(comics, index) in dcComics" :key="index">
-                    <a :href="comics.url">{{ comics.text }}</a>
+                <div >
+                    <a href="comics.url">Character</a>
+                    <a href="comics.url">Comics</a>
+                    <a href="comics.url">Movies</a>
+                    <a href="comics.url">TV</a>
+                    <a href="comics.url">Games</a>
+                    <a href="comics.url">Videos</a>
+                    <a href="comics.url">News</a>
                 </div>
             </div>
             <div class="link_cards">
                 <h3>SHOP</h3>
-                <div v-for="(shopItem, index) in shop" :key="index">
-                    <a :href="shopItem.url">{{ shopItem.text }}</a>
+                <div >
+                    <a href="shopItem.url">Shop DC</a>
+                    <a href="shopItem.url">Shop DC Collectibles</a>
                 </div>
             </div>
         </div>
@@ -143,8 +30,18 @@ export default{
         <div class="center">
             <div class="link_cards">
                 <h3>DC</h3>
-                <div v-for="(dcElement, index) in DC" :key="index">
-                    <a :href="dcElement.url">{{ dcElement.text }}</a>
+                <div >
+                    <a href="dcElement.url">Terms of us</a>
+                    <a href="dcElement.url">Privacy policy(New)</a>
+                    <a href="dcElement.url">Ad Choices</a>
+                    <a href="dcElement.url">Advertising</a>
+                    <a href="dcElement.url">Jobs</a>
+                    <a href="dcElement.url">Subscriptions</a>
+                    <a href="dcElement.url">Talent Workshops</a>
+                    <a href="dcElement.url">CPSC Certificates</a>
+                    <a href="dcElement.url">Ratings</a>
+                    <a href="dcElement.url">Shop Help</a>
+                    <a href="dcElement.url">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -153,11 +50,14 @@ export default{
         <div class="right">
             <div class="link_cards">
                 <h3>SITES</h3>
-                <div v-for="(sitesEl, index) in sites" :key="index">
-                    <a :href="sitesEl.url">{{ sitesEl.text }}</a>
+                <div>
+                    <a href="sitesEl.url">DC</a>
+                    <a href="sitesEl.url">MAD Magazine</a>
+                    <a href="sitesEl.url">DC Kids</a>
+                    <a href="sitesEl.url">DC Universe</a>
+                    <a href="sitesEl.url">DC Power Visa</a>
                 </div>
             </div>
         </div>
     </section>
 </footer>
-
