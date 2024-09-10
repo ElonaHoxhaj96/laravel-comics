@@ -1,4 +1,4 @@
-    
+
 export default{
     name:'LinkFooter',
     data() {
@@ -117,47 +117,3 @@ export default{
         }
     }
 }
-
-
-<footer class="my-5 text-center">
-    <section id="contenitor_link">
-        <img src="../assets/dc-logo-bg.png" class="logo" alt="DC Logo">
-        
-        <!-- collegamenti link prima colonna sinistra -->
-        <div class="left">
-            <div class="link_cards">
-                <h3>DC COMICS</h3>
-                <div v-for="(comics, index) in dcComics" :key="index">
-                    <a :href="comics.url">{{ comics.text }}</a>
-                </div>
-            </div>
-            <div class="link_cards">
-                <h3>SHOP</h3>
-                <div v-for="(shopItem, index) in shop" :key="index">
-                    <a :href="shopItem.url">{{ shopItem.text }}</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- collegamenti link seconda colonna al centro -->
-        <div class="center">
-            <div class="link_cards">
-                <h3>DC</h3>
-                <div v-for="(dcElement, index) in DC" :key="index">
-                    <a :href="dcElement.url">{{ dcElement.text }}</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- collegamenti link terza colonna a destra -->
-        <div class="right">
-            <div class="link_cards">
-                <h3>SITES</h3>
-                <div v-for="(sitesEl, index) in sites" :key="index">
-                    <a :href="sitesEl.url">{{ sitesEl.text }}</a>
-                </div>
-            </div>
-        </div>
-    </section>
-</footer>
-

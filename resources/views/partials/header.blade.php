@@ -20,28 +20,3 @@
     </nav>
 </header>
 
-
-<style lang="scss" scoped>
-    nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    ul{
-        display: flex;
-        gap: 1rem;
-    }
-    li{
-       list-style: none;
-       :hover{
-            border-bottom: solid 0.2rem blue;
-            }
-       a{
-        text-decoration: none;
-        color: rgb(88, 88, 88);
-        font-weight: bold;
-        padding-bottom: 2.4rem; 
-       }
-    }
-
-</style>
